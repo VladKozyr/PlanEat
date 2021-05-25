@@ -1,0 +1,20 @@
+.searchbar_category-picker {
+    justify-self: center;
+    margin: 0;
+    padding: 6px 0;
+    border-radius: 10px 0 0 10px;
+    background: rgba(0, 0, 0, 0.04);
+    font-weight: 500;
+    border: 1px solid rgb(217, 217, 217);
+    border-right: none;
+    min-width: 140px;
+    white-space: nowrap;
+    font-size: 12px;
+    text-align: center;
+}
+
+.searchbar {
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}

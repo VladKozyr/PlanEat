@@ -1,0 +1,11 @@
+.option {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding: 3px;
+    border: solid 2px #D9D9D9;
+    border-radius: 16%;
+    justify-content: center;
+    align-items: center;
+}

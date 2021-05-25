@@ -1,0 +1,117 @@
+.recipe-content {
+    width: 1000px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 177px);
+}
+
+.left-column-recipe {
+    width: 40%;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.right-column-recipe {
+    width: 60%;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.dishes-and-ingredients {
+    display: flex;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.dishes, .ingredients {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    font-size: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.metric p {
+    margin: 0 0 0 5px;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.metric-icon {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.heading-block {
+    margin-bottom: 40px;
+}
+
+.utils-list-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 0;
+}
+
+.utils-icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.recipeText {
+    max-width: 100%;
+    color: rgba(0, 0, 0, 0.65);
+    word-break: break-all !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.recipe-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1027px) {
+    .recipe-container {
+        align-items: center;
+        align-self: center;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .utils-list-container{
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .recipe-image {
+        max-width: 600px;
+    }
+}
