@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "Recipe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "recipeCaption": {
+      "type": "string"
+    },
+    "recipeDescription": {
+      "type": "richtext"
+    },
+    "recipeImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "breakfast",
+        "mainDish",
+        "firstDish",
+        "salad",
+        "dessert",
+        "quick"
+      ]
+    },
+    "timeText": {
+      "type": "string"
+    },
+    "calories": {
+      "type": "string"
+    },
+    "recipeSlug": {
+      "type": "string"
+    }
+  }
+}

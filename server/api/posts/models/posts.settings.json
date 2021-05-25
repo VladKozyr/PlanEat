@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Number": {
+      "type": "integer"
+    }
+  }
+}
